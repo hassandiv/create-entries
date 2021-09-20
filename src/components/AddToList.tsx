@@ -69,7 +69,7 @@ const AddToList:FC<myEntryAddToListProps> = ({ entryProps, setEntryProps }) => {
     }
 
     const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
-        if (!name || !age) { //if not empty string
+        if (!name || !age) { //dont submit item to list if empty !name is same as name === ''
             return
         }
         setEntryProps([ //(property) name/key/identifier: below from the parent entry state we pass our new input state values to the parent entry state like below 
